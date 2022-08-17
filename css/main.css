@@ -1,10 +1,30 @@
 :root {
   --dark-color: #19283f;
   --green-color: #33d1cc;
+  --red-color: #ff3150;
+  --yellow-color: #ffc400;
+  --section-color: #eff7fa;
 }
 
 body {
   font-family: "Roboto", sans-serif;
+}
+
+.main-btn {
+  background-color: var(--red-color);
+  color: var(--yellow-color);
+  padding: 0.5rem 1rem;
+}
+
+.main-title::after {
+  content: "";
+  width: 120px;
+  height: 2px;
+  background-color: var(--green-color);
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .navbar {
@@ -37,4 +57,31 @@ body {
 
 .navbar .navbar-toggler:focus {
   box-shadow: none;
+}
+
+.landing {
+  background-color: var(--dark-color);
+  min-height: calc(60vh - 72px);
+}
+
+.features .icon-holder {
+  height: 200px;
+}
+
+.features .icon-holder svg {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.features .icon-holder .number {
+  font-size: 12rem;
+  color: var(--section-color);
+}
+
+.features .icon-holder .icon {
+  color: var(--green-color);
+}
+
+.features .feat h4 {
+  color: var(--yellow-color);
 }
