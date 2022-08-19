@@ -138,3 +138,47 @@ body {
   max-width: 500px;
 }
 /* End stuff section */
+
+/* start team section */
+.team {
+  background-color: var(--section-color);
+}
+
+.team h2 {
+  color: var(--yellow-color);
+}
+
+.team .box h4 {
+  background-color: var(--green-color);
+}
+/* End Team section */
+
+/* Start Project section */
+.project {
+  background-color: var(--dark-color);
+}
+/* End Project section */
+
+/* Start Subscribe Section */
+.subscribe {
+  background-color: var(--yellow-color);
+}
+
+.subscribe input[type="text"] {
+  border: none;
+  border-bottom: 1px solid #fff;
+}
+
+.subscribe input[type="text"]:focus {
+  outline: hidden;
+}
+
+.subscribe ::placeholder {
+  color: #fff;
+}
+
+.subscribe input[type="submit"] {
+  background-color: var(--dark-color);
+  color: var(--yellow-color);
+}
+/* End Subscribe Section */
